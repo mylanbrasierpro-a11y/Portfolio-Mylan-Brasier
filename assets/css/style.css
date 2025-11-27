@@ -24,9 +24,25 @@ header nav ul li {
   margin-left: 2rem;
 }
 
+.title {
+  background-image: url("../img/title/image.png");
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title .text-title {
+  font-size: 1.5rem;
+}
+.title .text-title .mylan {
+  color: rgb(206, 212, 218);
+}
+
 /*base*/
 body {
   margin: 0;
+  font-family: "roboto regular";
 }
 
 .container {
@@ -34,6 +50,11 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+@font-face {
+  font-family: "roboto regular";
+  src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */

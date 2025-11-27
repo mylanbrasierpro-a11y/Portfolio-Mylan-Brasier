@@ -1,5 +1,5 @@
 /*abstracts*/
-
+@use "abstracts/variable";
 /*components*/
 
 /*layout*/
@@ -10,3 +10,4 @@
 
 /*base*/
 @use "base/base";
+@use "base/fonts"

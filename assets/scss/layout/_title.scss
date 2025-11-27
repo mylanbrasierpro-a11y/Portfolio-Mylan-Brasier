@@ -1,0 +1,15 @@
+@use "../abstracts/variable" as variable;
+.title{
+    background-image:url("../img/title/image.png");
+    height: 70vh;   
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        .text-title{
+            font-size: 1.5rem;
+            .mylan{
+            color:variable.$secondary-color;
+         }
+    }
+}
