@@ -39,6 +39,28 @@ header nav ul li {
   color: rgb(206, 212, 218);
 }
 
+.sect-home {
+  background-color: rgb(206, 212, 218);
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 5rem;
+}
+.sect-home .home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.sect-home .home .home-title {
+  align-items: center;
+}
+.sect-home .home .home-title strong {
+  color: #f8f9fa;
+}
+.sect-home .home .home-text {
+  width: 42%;
+}
+
 /*base*/
 body {
   margin: 0;
