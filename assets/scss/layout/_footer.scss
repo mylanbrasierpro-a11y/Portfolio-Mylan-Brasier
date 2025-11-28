@@ -1,0 +1,37 @@
+@use "../abstracts/variable" as variable;
+footer{
+    background-color:variable.$primary-color;
+        .container-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .container-logo-reseau{
+                display: flex;
+                justify-content:center ;
+                margin-right: 1.5rem;
+                margin-top: 1.5rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid variable.$secondary-color;
+                padding-bottom: 1rem;
+
+                img{
+                    width: 50px;
+        }
+    }
+    .logo-dev{
+        margin-left:2rem;
+        img{
+            width: 75px;
+            }
+        }
+    }
+}
+.container-copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+        .copyright{
+            color:variable.$secondary-color;
+        }
+}

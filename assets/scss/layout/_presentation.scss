@@ -1,0 +1,5 @@
+@use "../abstracts/variable" as variable;
+
+    .qui-suis-je{
+        background-color:variable.$primary-color;
+    }

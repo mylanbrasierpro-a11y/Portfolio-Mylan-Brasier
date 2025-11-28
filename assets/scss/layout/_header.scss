@@ -10,11 +10,20 @@ header{
         display: flex;
         list-style-type: none;
         gap: 5rem;
+                a {
+            text-decoration: none; 
+            border: none;
+            outline: none;
+            color:variable.$secondary-color;
+            font-size: 1.4rem;
+        }
+        }
         li{
-            list-style: none;
+            list-style-type: none;
+            
         }
     }
-}}
+}
 .logo{
     width: 15%;
     margin-left: 2rem;

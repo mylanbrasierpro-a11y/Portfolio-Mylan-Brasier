@@ -15,8 +15,15 @@ header nav ul {
   list-style-type: none;
   gap: 5rem;
 }
-header nav ul li {
-  list-style: none;
+header nav ul a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: rgb(206, 212, 218);
+  font-size: 1.4rem;
+}
+header nav li {
+  list-style-type: none;
 }
 
 .logo {
@@ -24,9 +31,46 @@ header nav ul li {
   margin-left: 2rem;
 }
 
+footer {
+  background-color: rgb(18, 20, 23);
+}
+footer .container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-footer .container-logo-reseau {
+  display: flex;
+  justify-content: center;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  gap: 1.2rem;
+  border-bottom: 1px solid rgb(206, 212, 218);
+  padding-bottom: 1rem;
+}
+footer .container-footer .container-logo-reseau img {
+  width: 50px;
+}
+footer .container-footer .logo-dev {
+  margin-left: 2rem;
+}
+footer .container-footer .logo-dev img {
+  width: 75px;
+}
+
+.container-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.container-copyright .copyright {
+  color: rgb(206, 212, 218);
+}
+
 .title {
   background-image: url("../img/title/image.png");
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,13 +80,13 @@ header nav ul li {
   font-size: 1.5rem;
 }
 .title .text-title .mylan {
-  color: rgb(206, 212, 218);
+  color: #f8f9fa;
 }
 
 .sect-home {
   background-color: rgb(206, 212, 218);
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 5rem;
 }
 .sect-home .home {
@@ -59,6 +103,25 @@ header nav ul li {
 }
 .sect-home .home .home-text {
   width: 42%;
+}
+
+.portfolio .container-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.portfolio .img-portfolio {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  gap: 8rem;
+}
+.portfolio .img-portfolio img {
+  max-width: 120%;
+}
+.portfolio h2 {
+  font-size: 2.5rem;
 }
 
 /*base*/
