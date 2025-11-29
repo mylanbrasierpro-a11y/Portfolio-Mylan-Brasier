@@ -1,0 +1,15 @@
+@use "../abstracts/variable" as variable;
+
+.cv-container {
+    display: flex;
+   justify-content: center;
+   gap: 15rem;
+   font-size: 1.3rem;
+   margin-left: 17rem;
+   margin-top: 5rem;
+
+}
+.formation{
+    border-left: 1px solid variable.$secondary-color;
+    padding-left: 2rem;
+}

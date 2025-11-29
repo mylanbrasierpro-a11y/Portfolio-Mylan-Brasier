@@ -1,15 +1,16 @@
 @use "../abstracts/variable" as variable;
 
- .qui-suis-je{
-        background-color:variable.$secondary-color;
-        padding-bottom: 3rem;
-        h2{
+.objectif{
+    background-color:variable.$third-color;
+    text-align: right;
+    padding-bottom: 6rem;
+
+    h2{
             font-size: 3rem;
             margin: 0;
             padding-top: 2.5rem;
         }
         p{
-            font-size: 2.5rem;
-            
+            font-size: 2.5rem;   
         }
-    }
+}

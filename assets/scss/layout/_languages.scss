@@ -1,0 +1,23 @@
+@use "../abstracts/variable" as variable;
+
+
+.logo-language{
+    background-color: variable.$secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; 
+    padding: 2rem 0; 
+    margin-bottom:2rem ;
+    a {
+        display: inline-block;
+    }
+    
+    img{
+        width: 8rem;
+    }
+}
+.languages{
+    text-align: center;
+    font-size: 1.5rem;
+}

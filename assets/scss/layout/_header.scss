@@ -16,7 +16,15 @@ header{
             outline: none;
             color:variable.$secondary-color;
             font-size: 1.4rem;
+            cursor: pointer;
+            transition: 0.2s;
+
         }
+        a:hover{
+            color:variable.$third-color;
+            font-size: 1.5rem;
+
+}
         }
         li{
             list-style-type: none;
@@ -28,3 +36,4 @@ header{
     width: 15%;
     margin-left: 2rem;
 }
+
