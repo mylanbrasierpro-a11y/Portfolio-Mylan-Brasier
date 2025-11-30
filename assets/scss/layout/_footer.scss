@@ -16,16 +16,21 @@ footer{
 
                 img{
                     width: 50px;
+                    transition:0.2s;
+        }
+        img:hover{
+            width: 55px;
         }
     }
     .logo-dev{
         margin-left:2rem;
         img{
             width: 75px;
+            }          
             }
         }
     }
-}
+
 .container-copyright{
     display: flex;
     flex-direction: column;

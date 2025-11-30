@@ -1,5 +1,15 @@
 /*abstracts*/
 /*components*/
+.btn {
+  color: rgb(255, 255, 255);
+  padding: 17px 19px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
 /*layout*/
 header {
   background-color: rgb(18, 20, 23);
@@ -56,6 +66,10 @@ footer .container-footer .container-logo-reseau {
 }
 footer .container-footer .container-logo-reseau img {
   width: 50px;
+  transition: 0.2s;
+}
+footer .container-footer .container-logo-reseau img:hover {
+  width: 55px;
 }
 footer .container-footer .logo-dev {
   margin-left: 2rem;
@@ -122,16 +136,28 @@ footer .container-footer .logo-dev img {
   max-width: 100%;
   justify-content: center;
   gap: 8rem;
-  filter: brightness(0.7);
 }
-.portfolio .img-portfolio img {
+.portfolio img {
   max-width: 120%;
+  filter: brightness(0.7);
+  transition-duration: 0.5s;
+  border-radius: 3px;
 }
-.portfolio h2 {
-  font-size: 2.5rem;
-}
-.portfolio .img-portfolio:hover {
+.portfolio img:hover {
   filter: brightness(1);
+  max-width: 122%;
+}
+.portfolio .btn {
+  background-color: rgb(18, 20, 23);
+  transition: 0.3s;
+}
+.portfolio .btn:hover {
+  background-color: rgb(206, 212, 218);
+  color: rgb(18, 20, 23);
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 .qui-suis-je {
@@ -212,6 +238,13 @@ footer .container-footer .logo-dev img {
 }
 .logo-language img {
   width: 8rem;
+  transition: 0.2s;
+}
+.logo-language img:hover {
+  width: 8.4rem;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 .languages {
