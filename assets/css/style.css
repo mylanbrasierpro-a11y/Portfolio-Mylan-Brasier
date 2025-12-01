@@ -13,24 +13,28 @@
 /*layout*/
 header {
   background-color: rgb(18, 20, 23);
+  height: 13vh;
+  display: flex;
+  align-items: center;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 95%;
+  align-items: center;
 }
 header nav ul {
   display: flex;
   list-style-type: none;
-  gap: 5rem;
+  gap: 12rem;
 }
 header nav ul a {
   text-decoration: none;
   border: none;
   outline: none;
   color: rgb(206, 212, 218);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -40,13 +44,54 @@ header nav ul a:hover {
 }
 header nav li {
   list-style-type: none;
+  padding: 2rem;
 }
 
 .logo {
-  width: 15%;
+  width: 75px;
   margin-left: 2rem;
 }
 
+.burger {
+  z-index: 2;
+}
+.burger ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  background-color: rgb(18, 20, 23);
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 2rem;
+  transform: translateY(-130%);
+  transition: 1s ease;
+  padding: 0;
+}
+.burger ul.open {
+  transform: translateY(0);
+}
+
+.logo-burger {
+  position: absolute;
+  right: 15px;
+  top: 1.7vh;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-burger {
+    display: block;
+  }
+  .burger ul {
+    gap: 5rem;
+  }
+  .no-burger {
+    display: none;
+  }
+}
 footer {
   background-color: rgb(18, 20, 23);
 }
@@ -103,6 +148,11 @@ footer .container-footer .logo-dev img {
   color: #f8f9fa;
 }
 
+@media screen and (max-width: 375px) {
+  .title .text-title {
+    font-size: 1.2rem;
+  }
+}
 .sect-home {
   background-color: rgb(206, 212, 218);
   margin: 0;
@@ -125,6 +175,18 @@ footer .container-footer .logo-dev img {
   width: 42%;
 }
 
+@media screen and (max-width: 768px) {
+  .sect-home {
+    padding: 2rem;
+  }
+  .sect-home .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .sect-home .home .home-text {
+    width: 100%;
+  }
+}
 .portfolio .container-portfolio {
   display: flex;
   flex-direction: column;
@@ -133,19 +195,20 @@ footer .container-footer .logo-dev img {
 }
 .portfolio .img-portfolio {
   display: flex;
-  max-width: 100%;
+  max-width: 90%;
   justify-content: center;
-  gap: 8rem;
+  gap: 5rem;
 }
 .portfolio img {
-  max-width: 120%;
+  max-width: 100%;
   filter: brightness(0.7);
   transition-duration: 0.5s;
   border-radius: 3px;
+  border: 1px solid black;
 }
 .portfolio img:hover {
   filter: brightness(1);
-  max-width: 122%;
+  max-width: 102%;
 }
 .portfolio .btn {
   background-color: rgb(18, 20, 23);
@@ -160,6 +223,24 @@ h2 {
   font-size: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container-portfolio .img-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-portfolio .img-portfolio img {
+    max-width: 30rem;
+    filter: brightness(1);
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-portfolio .img-portfolio img {
+    max-width: 20rem;
+  }
+}
 .qui-suis-je {
   background-color: rgb(206, 212, 218);
   padding-bottom: 3rem;
@@ -173,6 +254,39 @@ h2 {
   font-size: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .qui-suis-je h2 {
+    text-align: center;
+  }
+  .qui-suis-je p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .objectif .container h2 {
+    text-align: center;
+  }
+  .objectif .container p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .qui-suis-je h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .qui-suis-je p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .objectif .container h2 {
+    text-align: center;
+  }
+  .objectif .container p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .objectif {
   background-color: #f8f9fa;
   text-align: right;
@@ -187,14 +301,24 @@ h2 {
   font-size: 2.5rem;
 }
 
-.carousel {
-  width: 1200px;
-  height: 800px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid black;
+@media screen and (max-width: 375px) {
+  .objectif {
+    background-color: #f8f9fa;
+    text-align: right;
+    padding-bottom: 6rem;
+  }
+  .objectif h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding-top: 2.5rem;
+  }
+  .objectif p {
+    font-size: 2.5rem;
+  }
+  .objectif .container p {
+    font-size: 1.5rem;
+  }
 }
-
 .carousel img {
   position: absolute;
   top: 0;
@@ -204,16 +328,23 @@ h2 {
   object-fit: cover;
   opacity: 0;
   transition: opacity 0.5s;
-}
-
-.carousel img.active {
-  opacity: 1;
+  z-index: 1;
 }
 
 .galery {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
+}
+.galery .carousel {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+.galery .carousel img.active {
+  opacity: 1;
 }
 
 .title-portfolio h2 {
@@ -224,13 +355,28 @@ h2 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .galery .carousel {
+    width: 800px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .galery .carousel {
+    height: 500px;
+    width: 450px;
+  }
+  .title-portfolio h2 {
+    font-size: 1.7rem;
+  }
+}
 .logo-language {
   background-color: rgb(206, 212, 218);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding: 2rem 0;
+  padding: 2rem;
   margin-bottom: 2rem;
 }
 .logo-language a {
@@ -238,11 +384,11 @@ h2 {
 }
 .logo-language img {
   width: 8rem;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .logo-language img:hover {
   width: 8.4rem;
-  border: 1px solid black;
+  border: 1px solid rgb(18, 20, 23);
   padding: 10px;
   border-radius: 6px;
 }
@@ -252,20 +398,80 @@ h2 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .logo-language img {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo-language {
+    gap: 2rem;
+  }
+  .logo-language img {
+    width: 5rem;
+  }
+  .logo-language img:hover {
+    width: 5rem;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
 .cv-container {
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 10rem;
   font-size: 1.3rem;
   margin-left: 17rem;
   margin-top: 5rem;
 }
-
-.formation {
+.cv-container .perso {
+  display: flex;
+  flex-direction: column;
+}
+.cv-container .formation {
   border-left: 1px solid rgb(206, 212, 218);
   padding-left: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
+@media screen and (max-width: 768px) {
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    gap: 0rem;
+    padding: 0;
+  }
+  .cv-container .perso {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .cv-container .formation {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    border-top: 1px solid rgb(18, 20, 23);
+    padding: 0;
+  }
+  .cv-container ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cv-container li {
+    margin-right: 2rem;
+  }
+}
 /*base*/
 body {
   margin: 0;
@@ -273,7 +479,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;

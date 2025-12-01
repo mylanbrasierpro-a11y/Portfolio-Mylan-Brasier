@@ -9,22 +9,23 @@
     }
     .img-portfolio{
         display: flex;
-        max-width:100%;
+        max-width:90%;
         justify-content: center;
-        gap: 8rem;
+        gap: 5rem;
         
          }
          
         img{
-            max-width: 120%;
+            max-width: 100%;
             filter: brightness(0.7);
             transition-duration: 0.5s;
             border-radius: 3px;
+            border: 1px solid black;
             
         }
         img:hover{
                 filter: brightness(1);
-                max-width: 122%;
+                max-width: 102%;
             }
             .btn{
                 background-color:variable.$primary-color;
@@ -40,3 +41,31 @@
 
     }
 
+@media screen and (max-width: 768px) {
+.container-portfolio{
+        
+    .img-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            max-width: 30rem;
+            filter: brightness(1);
+            border-radius: 3px;
+            border: 1px solid black;
+            
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .container-portfolio{
+         .img-portfolio{
+            img{
+                max-width: 20rem;
+            }
+        }
+    }
+}

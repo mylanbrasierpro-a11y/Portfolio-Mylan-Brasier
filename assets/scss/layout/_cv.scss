@@ -3,13 +3,57 @@
 .cv-container {
     display: flex;
    justify-content: center;
-   gap: 15rem;
+   gap: 10rem;
    font-size: 1.3rem;
    margin-left: 17rem;
    margin-top: 5rem;
-
-}
-.formation{
+    .perso{
+        display: flex;
+        flex-direction: column;
+    }
+    .formation{
     border-left: 1px solid variable.$secondary-color;
     padding-left: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+   .cv-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    gap: 0rem;
+    padding: 0;
+    .perso{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .formation{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        border-top: 1px solid variable.$primary-color;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        text-align: center;
+        margin-right: 2rem;
+        }
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .cv-container{
+        li{
+            margin-right: 2rem;
+        }
+    }
 }

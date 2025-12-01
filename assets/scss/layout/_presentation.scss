@@ -13,3 +13,51 @@
             
         }
     }
+@media screen and (max-width: 768px) {
+    .qui-suis-je{
+        
+        h2{
+            text-align: center;
+        }
+        p{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+        .objectif{
+            .container{
+            h2{
+                text-align: center;
+            }
+                p{
+                    font-size: 2rem;
+                    text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .qui-suis-je{
+        
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+        .objectif{
+            .container{
+            h2{
+                text-align: center;
+            }
+                p{
+                    font-size: 2rem;
+                    text-align: center;
+            }
+        }
+    }
+}

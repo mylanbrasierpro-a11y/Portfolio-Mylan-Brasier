@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
 </head>
 <body>
     <header>
@@ -12,10 +13,24 @@
             <div>
                 <a href="index.html"><img src="assets/img/developpeur.png" alt="logo" class="logo"></a>
             </div>
-            <div>   
+            <div class="no-burger">   
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="presentation.html">Qui suis-je</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="logo-burger" id="logo-burger">
+                <svg width="79" height="75" viewBox="0 0 79 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="79" height="75" fill="#121417"/>
+                <path d="M57.512 60.5251H21.014C16.353 60.5251 12.561 56.9251 12.561 52.5001V48.0001C12.561 47.4001 13.114 46.8751 13.746 46.8751H13.825C14.299 46.8751 14.773 47.1751 14.931 47.6251C15.247 48.6001 17.459 49.7251 20.461 49.7251C23.068 49.7251 24.885 48.9001 25.675 48.1501C26.386 47.3251 27.492 46.8751 28.756 46.8751H31.047C32.232 46.8751 33.338 47.3251 34.128 48.1501C34.839 48.9751 36.735 49.7251 39.342 49.7251C41.87 49.7251 43.766 48.9001 44.556 48.1501C45.267 47.3251 46.373 46.8751 47.637 46.8751H49.533C50.718 46.8751 51.824 47.3251 52.614 48.1501C53.325 48.9751 55.221 49.7251 57.828 49.7251C60.751 49.7251 62.963 48.6751 63.279 47.6251C63.437 47.1751 63.911 46.8751 64.385 46.8751H64.78C65.412 46.8751 65.965 47.4001 65.965 48.0001V52.5001C65.965 56.9251 62.173 60.5251 57.512 60.5251ZM14.931 50.7001V52.5001C14.931 55.6501 17.617 58.2751 21.014 58.2751H57.512C60.83 58.2751 63.595 55.7251 63.595 52.5001V50.4001C62.173 51.3751 60.04 51.9001 57.67 51.9001C54.747 51.9001 52.061 51.0001 50.718 49.5001C50.481 49.2001 50.007 49.0501 49.454 49.0501H47.558C47.084 49.0501 46.61 49.2001 46.294 49.5001C44.951 51.0001 42.265 51.9001 39.342 51.9001C36.419 51.9001 33.733 51.0001 32.39 49.5001C32.153 49.2001 31.679 49.0501 31.126 49.0501H28.835C28.361 49.0501 27.887 49.2001 27.571 49.5001C26.228 51.0001 23.542 51.9001 20.619 51.9001C18.328 51.9751 16.432 51.5251 14.931 50.7001ZM63.437 43.1251H15.721C12.64 43.1251 10.112 40.6501 10.112 37.5751C10.112 36.0751 10.665 34.7251 11.692 33.6751C12.798 32.6251 14.141 32.0251 15.642 32.0251H48.032C48.427 32.0251 48.822 32.2501 49.059 32.5501L50.718 35.1751L54.352 32.2501C54.589 32.1001 54.826 31.9501 55.142 31.9501H63.437C66.518 31.9501 69.046 34.4251 69.046 37.5001C69.046 39.0001 68.493 40.3501 67.466 41.4001C66.36 42.5251 64.938 43.1251 63.437 43.1251ZM15.721 34.2001C14.852 34.2001 14.062 34.5001 13.43 35.1751C12.798 35.7751 12.482 36.6751 12.482 37.5751C12.482 39.3751 13.904 40.8751 15.721 40.8751H63.437C64.306 40.8751 65.096 40.5751 65.728 39.9001C66.36 39.3001 66.676 38.4001 66.676 37.5001C66.676 35.7001 65.254 34.2001 63.437 34.2001H55.616L51.271 37.7251C51.034 37.9501 50.639 38.0251 50.323 37.9501C50.007 37.8751 49.691 37.7251 49.533 37.4251L47.4 34.2001H15.721ZM50.481 38.0251C50.402 38.0251 50.323 38.0251 50.323 38.0251C50.007 37.9501 49.691 37.8001 49.533 37.5001L47.4 34.2001H15.879C15.247 34.2001 14.694 33.6751 14.694 33.0751V27.9751C14.694 27.3751 15.247 26.8501 15.879 26.8501H62.726C63.358 26.8501 63.911 27.3751 63.911 27.9751V33.0751C63.911 33.6751 63.358 34.2001 62.726 34.2001H55.616L51.271 37.7251C51.034 37.9501 50.797 38.0251 50.481 38.0251ZM17.064 31.9501H48.032C48.427 31.9501 48.822 32.1751 49.059 32.4751L50.718 35.1001L54.352 32.1751C54.589 32.0251 54.826 31.8751 55.142 31.8751H61.462V29.0251H17.064V31.9501ZM57.67 51.9751C54.352 51.9751 51.508 50.8501 50.323 49.1251H46.61C45.425 50.8501 42.581 51.9751 39.263 51.9751C35.945 51.9751 33.101 50.8501 31.916 49.1251H27.808C26.623 50.8501 23.779 51.9751 20.461 51.9751C16.985 51.9751 14.062 50.7751 13.035 48.9751C11.218 48.4501 9.95399 46.8751 9.95399 45.0751C9.95399 43.2001 11.376 41.5501 13.272 41.1001C13.43 41.0251 13.588 41.0251 13.746 41.0251H64.78C67.15 41.0251 69.046 42.8251 69.046 45.0751C69.046 47.2501 67.229 49.0501 65.017 49.1251C63.832 50.8501 60.988 51.9751 57.67 51.9751ZM45.899 46.8751H51.034C51.508 46.8751 51.982 47.1751 52.14 47.6251C52.456 48.6001 54.668 49.7251 57.67 49.7251C60.593 49.7251 62.805 48.6751 63.121 47.6251C63.279 47.1751 63.753 46.8751 64.227 46.8751H64.78C65.807 46.8751 66.676 46.0501 66.676 45.0751C66.676 44.1001 65.807 43.2751 64.78 43.2751H14.062C13.983 43.2751 13.983 43.2751 13.904 43.2751C12.956 43.4251 12.245 44.1751 12.245 45.0751C12.245 45.9751 12.956 46.7251 13.904 46.8751C14.062 46.8751 14.141 46.9501 14.22 46.9501C14.536 47.1001 14.852 47.3251 14.931 47.6251C15.247 48.6001 17.459 49.7251 20.461 49.7251C23.384 49.7251 25.596 48.6751 25.912 47.6251C26.07 47.1751 26.544 46.8751 27.018 46.8751H32.548C33.022 46.8751 33.496 47.1751 33.654 47.6251C33.97 48.6001 36.182 49.7251 39.105 49.7251C42.028 49.7251 44.24 48.6751 44.556 47.6251C44.951 47.1751 45.346 46.8751 45.899 46.8751ZM64.78 29.1751H13.746C13.114 29.1751 12.561 28.6501 12.561 28.0501V26.7001C12.561 19.9501 18.328 14.4751 25.438 14.4751H53.009C60.119 14.4751 65.886 19.9501 65.886 26.7001V28.0501C65.965 28.6501 65.412 29.1751 64.78 29.1751ZM14.931 26.9251H63.595V26.7001C63.595 21.2251 58.855 16.7251 53.088 16.7251H25.517C19.75 16.7251 15.01 21.2251 15.01 26.7001V26.9251H14.931ZM24.964 23.5501L27.966 20.7001C28.44 20.2501 28.44 19.5751 27.966 19.1251C27.492 18.6751 26.781 18.6751 26.307 19.1251L23.305 21.9751C22.831 22.4251 22.831 23.1001 23.305 23.5501C23.542 23.7751 23.858 23.8501 24.174 23.8501C24.411 23.8501 24.727 23.7001 24.964 23.5501ZM38.631 23.5501L41.633 20.7001C42.107 20.2501 42.107 19.5751 41.633 19.1251C41.159 18.6751 40.448 18.6751 39.974 19.1251L36.972 21.9751C36.498 22.4251 36.498 23.1001 36.972 23.5501C37.209 23.7751 37.525 23.8501 37.841 23.8501C38.078 23.8501 38.394 23.7001 38.631 23.5501ZM51.824 23.5501L54.826 20.7001C55.3 20.2501 55.3 19.5751 54.826 19.1251C54.352 18.6751 53.641 18.6751 53.167 19.1251L50.165 21.9751C49.691 22.4251 49.691 23.1001 50.165 23.5501C50.402 23.7751 50.718 23.8501 51.034 23.8501C51.271 23.8501 51.587 23.7001 51.824 23.5501Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="burger"> 
+                <ul id="burger">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
                     <li><a href="Portfolio.html">Portfolio</a></li>
                     <li><a href="cv.html">CV</a></li>
                 </ul>
@@ -37,29 +52,28 @@
                         <h2>Developpeur <strong class="strong">Web</strong> </h2>
                     </div>
                     <div class="home-text">
-                        <p>Moi c’est Mylan, je suis actuellement en formation à Talis de Périgueux pour devenir développeur Web, si vous souhaitez en savoir plus sur mes projets et mon parcours c'est ici que ça se passe</p>
+                        <p>Moi c’est Mylan, je suis actuellement en formation à Talis de Périgueux pour devenir développeur Web, si vous souhaitez en savoir plus sur mes projets et mon parcours c'est ici que ça se passe.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="portfolio">
-            <div class="container">
-                <div class="container-portfolio">
-                    <div>
-                        <h2>Mes réalisations</h2>
-                    </div>
-                    <div class="img-portfolio">
-                        <a href="https://github.com/mylanbrasierpro-a11y/expedition-33"><img src="assets/img/portfolio/exepdition 33 screen.png" alt="screenshot site expedition 33"></a>
-                        <a href="https://github.com/mylanbrasierpro-a11y/Magic-The-Gathering"><img src="assets/img/portfolio/Magic the gath screen.png" alt="screenshot site magic the gathering"></a>
-                        <a href="https://github.com/mylanbrasierpro-a11y/Espace-Renovation"><img src="assets/img/portfolio/renov screen.png" alt="screenshot site renov"></a>
-                    </div>
-                    <div>
-                        <a href="Portfolio.html" class="btn">Venez-voir !</a>
-                    </div>
+            <div class="container-portfolio">
+                <div>
+                    <h2>Mes réalisations</h2>
+                </div>
+                <div class="img-portfolio">
+                    <a href="https://github.com/mylanbrasierpro-a11y/expedition-33"><img src="assets/img/portfolio/exepdition 33 screen.png" alt="screenshot site expedition 33"></a>
+                    <a href="https://github.com/mylanbrasierpro-a11y/Magic-The-Gathering"><img src="assets/img/portfolio/Magic the gath screen.png" alt="screenshot site magic the gathering"></a>
+                    <a href="https://github.com/mylanbrasierpro-a11y/Espace-Renovation"><img src="assets/img/portfolio/renov screen.png" alt="screenshot site renov"></a>
+                </div>
+                <div>
+                    <a href="Portfolio.html" class="btn">Venez-voir !</a>
                 </div>
             </div>
         </section>
     </main>
+        <script src="header.js"></script>
     <footer>
         <div class="container-footer">
             <div class="logo-dev">
@@ -67,9 +81,9 @@
             </div>
             <div class="container-copyright">
                 <div class="container-logo-reseau">
-                    <a  href=""><img src="assets/img/footer/github (1).png" alt="" class="reseau"></a>
-                    <a  href=""><img src="assets/img/footer/instagram (2).png" alt="" class="reseau"></a>
-                    <a  href=""><img src="assets/img/footer/linkedin.png" alt="" class="reseau"></a>
+                    <a  href="https://github.com/mylanbrasierpro-a11y"><img src="assets/img/footer/github (1).png" alt="logo github" class="reseau"></a>
+                    <a  href=""><img src="assets/img/footer/instagram (2).png" alt="logo instagram" class="reseau"></a>
+                    <a  href=""><img src="assets/img/footer/linkedin.png" alt="logo linkedin" class="reseau"></a>
                 </div>
                     <div class="copyright">
                         <p>© 2025-2026 Mylan Brasier</p>

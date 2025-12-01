@@ -1,25 +1,29 @@
 @use "../abstracts/variable" as variable;
 header{
     background-color:variable.$primary-color;
-    nav{
+    height: 13vh;
     display: flex;
-    align-items:center ;
-    justify-content: space-between;
-    width: 95%;
-        ul{
+    align-items: center;
+        nav{
         display: flex;
-        list-style-type: none;
-        gap: 5rem;
-                a {
-            text-decoration: none; 
-            border: none;
-            outline: none;
-            color:variable.$secondary-color;
-            font-size: 1.4rem;
-            cursor: pointer;
-            transition: 0.2s;
+        align-items:center ;
+        justify-content: space-between;
+        width: 95%;
+        align-items: center;
+            ul{
+            display: flex;
+            list-style-type: none;
+            gap: 12rem;
+                    a {
+                text-decoration: none; 
+                border: none;
+                outline: none;
+                color:variable.$secondary-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: 0.2s;
 
-        }
+            }
         a:hover{
             color:variable.$third-color;
             font-size: 1.5rem;
@@ -28,12 +32,57 @@ header{
         }
         li{
             list-style-type: none;
-            
+            padding: 2rem;
         }
     }
 }
 .logo{
-    width: 15%;
+    width: 75px;
     margin-left: 2rem;
 }
 
+.no-burger{
+
+   }
+   .burger{
+        z-index: 2;
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        background-color: variable.$primary-color;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 2rem;
+        transform: translateY(-130%);
+        transition: 1s ease;
+        padding: 0;
+        
+        &.open{
+            transform: translateY(0);
+        }
+        }
+   }
+    .logo-burger{
+        position: absolute;
+        right: 15px;
+        top:1.7vh;
+        display: none;
+    }
+@media screen and (max-width: 768px) {
+    
+    .logo-burger{
+        display: block;
+    }
+    .burger{
+        ul{
+            gap: 5rem;
+        }
+    }
+    .no-burger{
+        display: none;
+    }
+}

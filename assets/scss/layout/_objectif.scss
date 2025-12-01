@@ -14,3 +14,24 @@
             font-size: 2.5rem;   
         }
 }
+@media screen and (max-width: 375px) {
+    .objectif{
+    background-color:variable.$third-color;
+    text-align: right;
+    padding-bottom: 6rem;
+
+        h2{
+            font-size: 2.5rem;
+            margin: 0;
+            padding-top: 2.5rem;
+        }
+        p{
+            font-size: 2.5rem;   
+        }
+    .container{
+        p{
+        font-size: 1.5rem;   
+            }
+        }
+    }
+}

@@ -3,8 +3,8 @@
 .sect-home{
     background-color:variable.$secondary-color;
     margin: 0;
-    font-size: 2rem;
-    padding: 5rem;
+        font-size: 2rem;
+        padding: 5rem;
         .home{
             display: flex;
             align-items: center;
@@ -21,4 +21,22 @@
             width: 42%;
         }
     }
+}
+@media screen and (max-width: 768px) {
+    
+    .sect-home{
+        padding: 2rem;
+            .home{
+            display: flex;
+            flex-direction: column;
+                .home-text{
+                width: 100%;
+    }
+        }
+    }
+    
+
+}
+@media screen and (max-width: 375px) {
+
 }
